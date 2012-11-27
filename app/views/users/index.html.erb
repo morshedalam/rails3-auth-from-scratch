@@ -1,0 +1,28 @@
+<%= link_to 'New User', new_user_path, :class => 'btn pull-right' %>
+<h2>Users</h2>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Email</th>
+    <th style="width: 150px;"></th>
+  </tr>
+  </thead>
+
+  <% @users.each do |user| %>
+      <tr>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_name %></td>
+        <td><%= user.email %></td>
+        <td>
+          <%= link_to 'Show', user %> |
+          <%= link_to 'Edit', edit_user_path(user) %>
+          <% if current_user != user %>|
+              <%= link_to 'Destroy', user, method: :delete, data: {confirm: 'Are you sure?'} %>
+          <% end %>
+        </td>
+      </tr>
+  <% end %>
+</table>

@@ -1,0 +1,11 @@
+%h2 Sign In
+
+= form_tag sessions_path, :class => 'login-form' do
+  = label_tag :email
+  = email_field_tag :email, '', :class => 'login-email'
+
+  = label_tag :password
+  .input= password_field_tag :password, '', :class => 'login-password'
+
+  .input
+    = submit_tag "Sign in", :class => 'pull-right'

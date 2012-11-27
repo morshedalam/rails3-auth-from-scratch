@@ -1,0 +1,17 @@
+!!!
+%html{:lang => "en"}
+  %head
+    = render "layouts/head"
+
+  %body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          = link_to('Rally', root_path, :class => "brand")
+
+    .container
+      = render "shared/flash_messages"
+
+      .container{:style => "width: 450px;margin-top: 100px; border-radius: 10px;box-shadow: 3px 3px 5px 6px #ccc;"}
+        .span4{:style => "padding:10px"}
+          = yield

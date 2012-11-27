@@ -1,0 +1,22 @@
+<h2>User details</h2>
+
+<p>
+  <b>First name:</b>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+
+<div class="actions">
+  <%= link_to 'Edit', edit_user_path(@user), :class => 'btn' %>
+  <%= link_to 'Back', users_path, :class => 'btn' %>
+</div>
