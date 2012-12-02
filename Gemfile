@@ -16,6 +16,8 @@ gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'simple_form'
+gem 'bcrypt-ruby'
 
 group :development do
   gem 'brakeman'
