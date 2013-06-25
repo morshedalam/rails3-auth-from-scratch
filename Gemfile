@@ -12,9 +12,8 @@ group :assets do
   gem 'therubyracer'
 end
 
-gem 'less-rails'
-gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
+gem 'bootstrap-sass', '>= 2.3.0.0'
 gem 'haml-rails'
 gem 'simple_form'
 gem 'bcrypt-ruby'
