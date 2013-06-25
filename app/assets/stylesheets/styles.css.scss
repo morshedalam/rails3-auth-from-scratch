@@ -1,0 +1,21 @@
+// Import all the variables into the main css file.
+//@import "variables";
+
+// I gather this file is a starting point for the project.
+@import "bootstrap";
+// Include responsive Bootstrap styles
+@import "bootstrap-responsive";
+
+body {
+  padding-top: 60px;
+}
+
+.table-striped td {
+  padding-right: 10px;
+}
+.filter-bar{
+  padding: 10px 5px 2px;
+}
+.login-password, .login-email{
+  width: 355px;
+}
