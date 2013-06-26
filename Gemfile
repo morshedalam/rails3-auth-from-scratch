@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '1.9.3', :group => :production
 
 gem 'rails', '3.2.6'
+gem 'pg', :group => :production
 
 # Gems used only for assets and not required
 # in production environments by default.
